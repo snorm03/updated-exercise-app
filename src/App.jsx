@@ -6,6 +6,7 @@ const exercises = [
     { id: 2, name: "Push-ups", type: "repetition" },
     { id: 3, name: "Crunches", type: "repetition" },
     { id: 4, name: "Swimming", type: "duration" },
+    { id: 5, name: "Yoga", type: "group-class"},
 ];
 
 export default function App() {

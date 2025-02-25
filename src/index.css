@@ -19,6 +19,54 @@ h1 {
   
 }
 
+/* Group Exercise Display */
+
+.class-info-display{
+  color:rgb(80, 80, 80);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.info-display {
+  color:rgb(80, 80, 80);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+}
+
+.set-duration{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.set-intensity{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.save-button{
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 4px;
+  margin: 5px;
+  min-width: 100px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgb(230, 227, 220);
+  background-color:rgb(105, 122, 164);
+}
+.save-button:hover{
+  background-color: rgb(230, 227, 220);
+  color: rgb(105, 122, 164);
+}
+
 /* Duration Exercise Display */
 .timer{
   display: flex;
@@ -127,7 +175,7 @@ h1 {
   background-color: rgb(99, 99, 99);
 }
 
-.back-button {
+.submit-button {
   font-size: 1rem;
   font-weight: bold;
   padding: 8px;
@@ -139,7 +187,7 @@ h1 {
   color: rgb(105, 122, 164);
   background-color:rgb(230, 227, 220);
 }
-.back-button:hover{
+.submit-button:hover{
   background-color: rgb(105, 122, 164);
   color: rgb(230, 227, 220);
 }

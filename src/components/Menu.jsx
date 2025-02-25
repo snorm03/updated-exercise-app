@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DurationExercise from "./DurationExercise"; 
-import RepetitionExercise from "./RepetitionExercise"; 
+import RepetitionExercise from "./RepetitionExercise";
+import GroupExercise from "./GroupExercise";
 
 function Menu({ exercises }) {
     let [selectedExercise, setSelectedExercise] = useState(null);
@@ -22,7 +23,11 @@ function Menu({ exercises }) {
                     <RepetitionExercise />
                 )}
 
-                <button className="back-button" onClick={handleBack}>Back to Menu</button>
+                 {selectedExercise.type === "group-class" && (
+                    <GroupExercise />
+                )}
+
+                <button className="submit-button" onClick={handleBack}>Back to Menu</button>
             </div>
         );
     }
